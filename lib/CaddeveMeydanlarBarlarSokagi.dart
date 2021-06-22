@@ -33,6 +33,9 @@ class _CaddeveMeydanlarBarlarSokagiState extends State<CaddeveMeydanlarBarlarSok
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                CircularProgressIndicator(
+                  valueColor: new AlwaysStoppedAnimation<Color>(Colors.white),
+                ),
                 Text("Burası neresi? Gümbet Mahallesi’nde yer alan Barlar Sokağı, bir diğer adıyla bilinen Gümbet Barlar Sokağı,",
                   style: TextStyle (fontSize: 17, fontWeight: FontWeight.normal, color: Colors.black,fontStyle: FontStyle.italic ),),
                 Text(" yerli ve yabancı birçok turistin akın ettiği yerlerden biridir. Özellikle daha çok ünlülerin bulunduğu bu yerde, ",

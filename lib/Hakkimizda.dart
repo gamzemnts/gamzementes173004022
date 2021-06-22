@@ -35,7 +35,7 @@ class _HakkimizdaState extends State<Hakkimizda> {
                 Text(""),
                 Text("'Bu uygulama Dr. Öğretim Üyesi Ahmet Cevahir ÇINAR tarafından yönetilen 3004881 kodlu Mobil Programlama dersi",
                   style: TextStyle (fontSize: 15, fontWeight: FontWeight.normal,color: Colors.black ),),
-                Text("kapsamında 173004022 numaralı Gamze MENTEŞ tarafından 30 Nisan 2021 günü yapılmıştır.'",
+                Text("kapsamında 173004022 numaralı Gamze MENTEŞ tarafından 25 Haziran 2021 günü yapılmıştır.'",
                   style: TextStyle (fontSize: 15, fontWeight: FontWeight.normal,color: Colors.black ),),
                 Text(""),
                 Text(""),

@@ -30,7 +30,9 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
         body: Center(
           child: Column(
             children: [
-
+              CircularProgressIndicator(
+                valueColor: new AlwaysStoppedAnimation<Color>(Colors.white),
+              ),
               Text("HOŞGELDİNİZ"),
               TextField(
                 decoration: InputDecoration(

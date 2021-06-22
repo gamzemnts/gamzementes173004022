@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "208783817452",
+    "project_id": "flutterappdegisim",
+    "storage_bucket": "flutterappdegisim.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208783817452:android:0778549d56ceb125fd83c9",
+        "android_client_info": {
+          "package_name": "com.example.flutter_appdegisim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208783817452-5p873hg1s96r18gqc6n1taa98igp4md6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZap4gm89-WHe4v2UaDXab_9ybFX_ht1k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208783817452-5p873hg1s96r18gqc6n1taa98igp4md6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

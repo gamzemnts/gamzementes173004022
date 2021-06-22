@@ -2,11 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_appdegisim/Adres.dart';
 import 'package:flutter_appdegisim/BodrumDenizMuzesi.dart';
 import 'package:flutter_appdegisim/BodrumSuAltiArkeoloji.dart';
+import 'package:flutter_appdegisim/Bodrumyemekleri.dart';
 import 'package:flutter_appdegisim/CaddeveMeydanlarBarlarSokagi.dart';
 import 'package:flutter_appdegisim/CennetKoyu.dart';
+import 'package:flutter_appdegisim/Dosya%C4%B0slemleri/FileOperationsScreen.dart';
 import 'package:flutter_appdegisim/Hakkimizda.dart';
+import 'package:flutter_appdegisim/HavaDurumu.dart';
 import 'package:flutter_appdegisim/Sikayet.dart';
+import 'package:flutter_appdegisim/Turlarimiz.dart';
 import 'package:flutter_appdegisim/YarimAdaHakkinda.dart';
+import 'package:flutter_appdegisim/Yorumlar/Yorumlar.dart';
 import 'package:flutter_appdegisim/ZekiMurenSanatMuzesi.dart';
 
 
@@ -40,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       backgroundColor: Colors.lightBlueAccent[100],
       appBar: AppBar(
-        title: Text("BODRUM TUR ACENDESİ"),
+        title: Text("BODRUM TUR ACENTESİ"),
         centerTitle: true,
       ),
       drawer: Drawer(
@@ -70,6 +75,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ListTile(
               leading: Icon(Icons.message),
               title: Text("Memnuniyet/Şikayet Kutusu"),
+            ),
+            ListTile(
+              leading: Icon(Icons.message),
+              title: Text("Dosya İşlemleri"),
             ),
           ],
         ),
@@ -132,6 +141,31 @@ class _MyHomePageState extends State<MyHomePage> {
               }
           ),
           ListTile(
+              title: Text("BODRUM TUZLA KUŞ CENNETİ",style: TextStyle(fontSize:20),),
+              subtitle: Text("Bodrum Tuzla Kuş Cenneti, 125 farklı kuş türünü içerisinde barındırıyor. "),
+              leading: Icon(Icons.water_damage_rounded),
+              trailing: Icon(Icons.arrow_forward),
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => CennetKoyu()));
+              }
+          ),
+          ListTile(
+              title: Text("BODRUM YEMEKLERİ",  style: TextStyle (fontSize: 15,fontStyle: FontStyle.italic ),),
+              leading: Icon(Icons.message),
+              trailing: Icon(Icons.arrow_forward),
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Bodrumyemekleri()));
+              }
+          ),
+          ListTile(
+              title: Text("TURLARIMIZ",  style: TextStyle (fontSize: 15,fontStyle: FontStyle.italic ),),
+              leading: Icon(Icons.anchor_outlined),
+              trailing: Icon(Icons.arrow_forward),
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Turlarimiz()));
+              }
+          ),
+          ListTile(
             title: Text("Hakkımızda sayfası için tıklayınız",  style: TextStyle (fontSize: 15,fontStyle: FontStyle.italic ),),
             leading: Icon(Icons.account_circle),
             trailing: Icon(Icons.arrow_forward),
@@ -155,6 +189,31 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => Sikayet()));
               }
           ),
+          ListTile(
+              title: Text("Dosya İşlemleri",  style: TextStyle (fontSize: 15,fontStyle: FontStyle.italic ),),
+              leading: Icon(Icons.message),
+              trailing: Icon(Icons.arrow_forward),
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => FileOperationsScreen()));
+              }
+          ),
+          ListTile(
+              title: Text("Bodrum Güncel Hava Durumu İçin Tıklayınız",  style: TextStyle (fontSize: 15,fontStyle: FontStyle.italic ),),
+              leading: Icon(Icons.wb_sunny_outlined),
+              trailing: Icon(Icons.arrow_forward),
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => HavaDurumu()));
+              }
+          ),
+          ListTile(
+              title: Text("YORUMLARI OKUMAK VEYA YORUM YAPMAK İÇİN TIKLAYINIZ",  style: TextStyle (fontSize: 15,fontStyle: FontStyle.italic ),),
+              leading: Icon(Icons.add_comment),
+              trailing: Icon(Icons.arrow_forward),
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Yorumlar()));
+              }
+          ),
+
         ],
       ),
     );

@@ -19,6 +19,9 @@ class _CennetKoyuState extends State<CennetKoyu> {
         ),
         body: Column(
           children: [
+            CircularProgressIndicator(
+              valueColor: new AlwaysStoppedAnimation<Color>(Colors.white),
+            ),
             Padding(padding: const EdgeInsets.only(left: 50.0,top: 20.0,bottom: 20.0,),
                 child: CircleAvatar(
                   radius: 250,
